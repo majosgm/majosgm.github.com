@@ -1,1 +1,0 @@
-# majosgm.github.com
