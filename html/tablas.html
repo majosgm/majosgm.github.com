@@ -1,0 +1,397 @@
+<html>
+    <head>
+    <title>Tablas en html</title>
+        <link rel="stylesheet" href="../css/style.page.css" type="text/css">
+        <style type="text/css">
+            #tabla_1{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color:#855E6E;
+                border-style: solid;
+                border-color:#855E6E;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            #tabla_1 th{
+                background-color: #CE7095;
+                color: #F7F1E1;
+                border-style: dashed;
+                border-color: #855E6E;
+            }
+            #tabla_1 td{
+                background-color: #FFB2C1;
+                text-align: left;
+                border-radius: 5px;
+                margin: 10px;
+                border-style: solid;
+                border-color: #CE7095;
+                border-width: 3px;
+            }
+            #tabla_2{
+                color: blue;
+                
+            }
+            #tabla_2 td{
+                color:#CE7095;
+                height: 50px;
+                padding: 5px;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #F7F1E1;
+            }
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                border-style: solid;
+                margin: 0 auto;
+                
+                
+            }
+            .tabla_dos td{
+                width: 150px;
+                border-color:#855E6E;
+                border-style: dashed;
+                background-color:  #FFB2C1;
+            }
+            .tabla_dos th{
+                border-style: dashed;
+                border-color:#855E6E;
+                background-color: #CE7095;
+                color:#F7F1E1;
+            }
+            .celda_centrada{
+                padding:0px;
+                text-align: center;
+                background-color:#F7F1E1;
+                
+            }
+            #tabla_zebra{
+                width: 100%;
+                border-style:solid;
+                border-color: aqua;
+                border: 90px;
+                border-collapse:separate;
+                margin: 0 auto;
+                border-spacing: 3px;
+                
+            }
+            #tabla_zebra tbody tr:nth-child(even) {
+                background-color: #CE7095;
+                color:#FFB2C1;
+                
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #FFB2C1;
+                color:#CE7095;
+                
+            }
+            #tabla_zebra thead tr{
+                background-color: #855E6E;
+                color:#F7F1E1;
+            }
+            .tabla_hover{
+                margin: 0 auto;
+                width: 80%;
+                color: #855E6E;
+                border-spacing: 6px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #855E6E ; 
+               background-color: #FFDBD7;
+            }
+            .tabla_hover tr{
+                background-color:#FFB2C1;
+            }
+            .tabla_hover tr td{
+                border-style: solid;
+                border-width: 2px;
+                border-color:#CE7095;
+            }
+            .tabla_hover th{
+                background-color:#CE7095;
+                color:#F7F1E1;
+                border-style: solid;
+                border-width: 2px;
+                border-color:#855E6E; 
+            }
+            .tabla_hover tr:hover{
+                background-color: #855E6E; 
+                color:#F7F1E1;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Tablas en HTML</h1>
+        </header>
+    <nav>
+       <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/Listas.html">Listas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/tablas.html">Tablas</a></li>
+                <li><a href="../html/imágenes.html">Imágenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/videos.html">Video</a></li>
+                <li><a href="../html/Formularios.html">Formularios</a></li>
+            </ul>
+    </nav>
+ <main>
+   <section style="overflow: auto">
+     <h2>Rifa Universitaria</h2>   
+     <p>Con el fin de fomentar un ambiente colaborativo y divertido entre los estudiantes de la Facultad de Arquitectura, hemos decidido organizar una rifa especial de una cámara Canon modelo EOS rebel T8i, con distintos lentes incluidos.</p>
+	   <p>Esta actividad no solo nos permitirá interactuar y conocernos mejor, sino que también ofrecerá la oportunidad de ganar distintos premios emocionantes. Para llevar a cabo la rifa de manera justa y aleatoria, hemos recopilado la información de algunos compañeros, que incluye su matrícula, nombre y licenciatura.</p>
+	   <p> A continuación, se presenta una tabla con los datos necesarios para participar en la rifa. Cada nombre será asignado a un número, y durante el evento, realizaremos un sorteo en el que se anunciarán los ganadores. </p>
+       <table border="1" id="tabla_1">
+        <thead>
+           <tr>
+                <th>Matrícula</th>
+               <th>Nombre</th>
+               <th>Apellido Paterno</th>
+               <th>Apellido Materno</th>
+               <th>Colegio</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+               <td>202126894</td>
+               <td>Juan</td>
+               <td>Pérez</td>
+               <td>García</td>
+               <td>Arquitectura</td>
+            </tr>
+            <tr>
+               <td>202285697</td>
+               <td>Fernanda</td>
+               <td>Ramírez</td>
+               <td>Ramos</td>
+               <td>Urbano</td>
+            </tr>
+            <tr>
+               <td>202227874</td>
+               <td>Marco</td>
+               <td>Montiel</td>
+               <td>Flores</td>
+               <td>Gráfico</td>
+            </tr>
+            <tr>
+               <td>202398875</td>
+               <td>León</td>
+               <td>Jiménez</td>
+               <td>Ríos</td>
+               <td>Arquitectura</td>
+            </tr>
+            <tr>
+               <td>202192094</td>
+               <td>Verónica</td>
+               <td>Solis</td>
+               <td>Hernández</td>
+               <td>Gráfico</td>
+            </tr>
+            <tr>
+               <td>202027697</td>
+               <td>Yael</td>
+               <td>Varela</td>
+               <td>Cervantes</td>
+               <td>Urbano</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+       </table>
+    </section>
+	 
+     <section style="overflow: auto">
+     <h2>Club Deportivo</h2>   
+     <p>Con el propósito de fortalecer la comunidad estudiantil y fomentar un estilo de vida activo, hemos decidido crear un club deportivo en nuestra escuela. Este club estará abierto a todos los estudiantes que deseen participar en actividades deportivas, compartir su pasión por el ejercicio y disfrutar de la compañía de otros entusiastas del deporte. Para facilitar la organización de las actividades y asegurarnos de que todos estén informados sobre los eventos, hemos recopilado información básica sobre los interesados en unirse.</p>
+		 <p>A continuación, se presenta una tabla que muestra los nombres, edades, deportes, números de teléfono y correos electrónicos de algunos de los estudiantes que han expresado su interés en formar parte del club. Esta información será fundamental para coordinar reuniones, programar entrenamientos y compartir actualizaciones sobre las competiciones. Los invitamos a todos a unirse al club deportivo, donde tendrán la oportunidad de mejorar sus habilidades, hacer nuevos amigos y disfrutar de la diversión que brinda el deporte.
+
+</p>
+    <table class="tabla_hover">
+    <thead>
+        <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Deporte</th>
+        <th>Teléfono</th>
+        <th>E-mail</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Naomi López Serrano</td>
+            <td>20</td>
+            <td>Básquetbol</td>
+            <td>222856984</td>
+            <td>nao.13gmail.com</td>
+        </tr>
+            <tr>
+            <td>Miguel Felipe García Pérez</td>
+            <td>21</td>
+            <td>Natación</td>
+            <td>222824188</td>
+            <td>mp.god10gmail.com</td>
+        </tr>
+            <tr>
+            <td>Esteban Galicia Jimenez</td>
+            <td>18</td>
+            <td>Tiro con arco</td>
+            <td>222854266</td>
+            <td>egj.galiciag@mail.com</td>
+        </tr>
+            <tr>
+            <td>María Fernanda Núñez Flores</td>
+            <td>22</td>
+            <td>Atletismo</td>
+            <td>2229458733</td>
+            <td>fer.9090@gmail.com</td>
+        </tr>
+            <tr>
+            <td>Francisco Flores Fernández</td>
+            <td>19</td>
+            <td>Box</td>
+            <td>2259584177</td>
+            <td>paco.flores@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sara Real Pérez</td>
+            <td>20</td>
+            <td>Triatlón</td>
+            <td>2258796314</td>
+            <td>sara.real26@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+	 </section>
+  <section style="overflow: auto">
+     <h2>Recaudación de fondos</h2>   
+     <p>Con el objetivo de apoyar a nuestra comunidad escolar y fomentar la solidaridad entre estudiantes, hemos decidido organizar una campaña de recaudación de fondos. Esta actividad se centra en reunir recursos para cubrir necesidades básicas y mejorar las instalaciones de nuestra escuela. Para llevar a cabo esta campaña de manera efectiva, hemos solicitado la cooperación de nuestros compañeros.</p>
+
+<p>A continuación, se presenta una tabla que muestra los nombres, edades, números de teléfono y las aportaciones de algunos estudiantes. Cada contribución, sin importar su monto, es valiosa y ayuda a alcanzar nuestra meta. El total recaudado hasta ahora es de $580, lo que refleja el compromiso y la generosidad de los participantes. </p> <p> Invitamos a todos a seguir sumándose a esta noble causa, ya que cada pequeño gesto cuenta y puede hacer una gran diferencia en nuestra comunidad.</p>
+      <table id="tabla_2" class="tabla_dos">
+        <thead>
+          <tr>
+            <th style="width: 200px;">Nombre</th>
+            <th style="width: 100px;">Edad</th>
+            <th style="width: 200px"; colspan="2">Teléfono</th>
+            <th style="width: 100px;">Cooperación</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>Gregorio Pérez Solis</td>
+              <td style="text-align:center; padding:0px;">16</td>
+              <td>222 8294 188</td>
+              <td>222 9635 231</td>
+              <td style="text-align: center; padding: 0px; background-color:#F7F1E1"> $100</td>
+          </tr>
+              <tr>
+              <td>María José García Machorro</td>
+              <td style="text-align:center; padding:0px;">15</td>
+              <td>222 7895 159</td>
+                  <td>222 8863 789</td>
+              <td style="text-align: center; padding: 0px; background-color:#F7F1E1"> $200</td>
+          </tr>
+            <tr>
+              <td>Pablo Ríos Peralta</td>
+              <td style="text-align:center; padding:0px;">13</td>
+              <td>222 1525 178</td>
+                <td>222 8758 991</td>
+              <td style="text-align: center; padding: 0px; background-color:#F7F1E1">$50</td>
+          </tr>
+            <tr>
+              <td>Felipe Calderón López</td>
+              <td style="text-align:center; padding:0px;">12</td>
+              <td>222 2369 789</td>
+                <td>222 7896 695</td>
+              <td style="text-align: center; padding: 0px; background-color:#F7F1E1">$80</td>
+          </tr>
+            <tr>
+              <td>Enrique Peña Nieto</td>
+              <td style="text-align:center; padding:0px;">11</td>
+              <td>222 8569 147</td>
+                <td>222 1234 785</td>
+              <td style="text-align: center; padding: 0px; background-color:#F7F1E1"> $150</td>
+          </tr>
+              
+          </tbody>
+          <tfoot>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Total</td>
+              <td class="celda_centrada"style="background-color:#855E6E; color:#F7F1E1;">$580</td>
+              </tr>
+          </tfoot>
+      </table>
+    </section>
+<section style="overflow: auto">
+     <h2>Torneo Deportivo</h2>   
+     <p>Con el fin de promover la actividad física y el trabajo en equipo entre los estudiantes, hemos decidido organizar un torneo deportivo intercolegial. Este evento tiene como objetivo no solo fomentar la competencia sana, sino también fortalecer los lazos entre los participantes y disfrutar de un día lleno de diversión y camaradería. Para coordinar los equipos y asegurar la participación de todos, hemos recopilado información de los estudiantes interesados en participar.</p>
+	<p>A continuación, se presenta una tabla que incluye los nombres, edades, deportes, números de teléfono y correos electrónicos de algunos participantes. Esta información nos permitirá mantener una comunicación fluida y gestionar adecuadamente la logística del evento, así como informar a los jugadores sobre los horarios y detalles relevantes del torneo. Invitamos a todos los estudiantes a unirse y disfrutar de esta emocionante experiencia, que seguramente será memorable para todos.</p>
+    <table id="tabla_zebra">
+    <thead>
+        <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Deporte</th>
+        <th>Teléfono</th>
+        <th>E-mail</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Naomi López Serrano</td>
+            <td>20</td>
+            <td>Básquetbol</td>
+            <td>222856984</td>
+            <td>nao.13gmail.com</td>
+        </tr>
+            <tr>
+            <td>Miguel Felipe García Pérez</td>
+            <td>21</td>
+            <td>Natación</td>
+            <td>222824188</td>
+            <td>mp.god10gmail.com</td>
+        </tr>
+            <tr>
+            <td>Esteban Galicia Jimenez</td>
+            <td>18</td>
+            <td>Tiro con arco</td>
+            <td>222854266</td>
+            <td>egj.galiciag@mail.com</td>
+        </tr>
+            <tr>
+            <td>María Fernanda Núñez Flores</td>
+            <td>22</td>
+            <td>Atletismo</td>
+            <td>2229458733</td>
+            <td>fer.9090@gmail.com</td>
+        </tr>
+            <tr>
+            <td>Francisco Flores Fernández</td>
+            <td>19</td>
+            <td>Box</td>
+            <td>2259584177</td>
+            <td>paco.flores@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sara Real Pérez</td>
+            <td>20</td>
+            <td>Triatlón</td>
+            <td>2258796314</td>
+            <td>sara.real26@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+    >
+</main>
+        <footer>
+    <h5>Elaborado por María José García Machorro</h5>
+        </footer>
+    </body>
+</html>

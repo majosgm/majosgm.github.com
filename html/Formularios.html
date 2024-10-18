@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios HTML</title>
+<link href="../css/style.page.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			width: 50%;
+			height:auto;;
+			padding: 30px;
+			background-color: #855e6e;
+			color: #FFB2C1;
+			margin: 0 auto;
+			border-radius: 10px;
+		}
+		label,input{
+			
+			margin-left: 10px;
+		}
+		label{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			font-weight: bold;
+		}
+		input[type=text], input[type=password],input[type=number],input[type=month], input[type=time], input[type=date], input[type=tel], input[type=email]  {
+			width: 100%;
+			color: #855e6e;
+			padding: 5px;
+			font-weight: bold;
+			border: 3px solid #FFB2C1;
+			border-radius: 10px;
+			margin: 10px;
+		}
+		input[type=submit], input[type=reset]{
+			width: 30%;
+			background-color:#855e6e;
+			padding: 5px;
+			margin: 20px auto;
+			border-radius: 10px;
+			color: #FFB2C1;
+			font-weight: bolder;
+			border:3px solid  #FFB2C1;
+			display: block;
+		}
+		input[type=text]:focus,input[type=password]:focus{
+			background-color:#FFDBD7;
+			border:3px solid #855e6e;
+		}
+		select{
+			width: 100%;
+			color: #855e6e;
+			padding: 5px;
+			font-weight: bold;
+			border: 3px solid #FFB2C1;
+			border-radius: 10px;	
+		}
+		input[type=submit]:hover, input[type=reset]:hover{
+			background-color: #FFDBD7;
+            width: 100px;
+			color: #855e6e;
+		}
+		input[type=file]{
+			color: #855e6e;
+			font-weight: bold;
+			background-color: #FFDBD7;
+			border-radius: 14px;
+			padding: 10px;
+			margin-top: 10px;
+			border: 3px solid  #FFB2C1;
+		}
+		#respuesta{
+			background-color: #FFDBD7;
+			color: #855e6e;
+			border-radius: 14px;
+			border: 3px solid  #FFB2C1;
+			display: block;
+			padding: 10px;
+			margin-top: 10px;
+		}
+		input[type=color]{
+			color: #855e6e;
+		padding:10;
+			border: 3px solid #FFB2C1;
+			border-radius: 10px;
+			margin-top: 0 auto;
+			height: 50px;
+			width: 100%;
+			margin: 10px;
+		}
+		
+
+	</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Formularios en HTML</h1>
+</header>
+<nav>
+	<ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/Listas.html">Listas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/tablas.html">Tablas</a></li>
+                <li><a href="../html/imágenes.html">Imágenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/videos.html">Video</a></li>
+                <li><a href="../html/Formularios.html">Formularios</a></li>
+            </ul>
+</nav>
+<main>
+	<section>
+	<h2>¡Bienvenido!</h2>
+		<p>Te agradecería mucho que pudieras completar los siguientes cuestionarios, siguiendo las instrucciones específicas de cada sección. Tu participación es realmente importante para mí, ya que la información recopilada me será de gran utilidad para avanzar en este proyecto. Aprecio enormemente el tiempo y esfuerzo que dediques a ello.</p> <p> ¡Muchas gracias por tu apoyo!</p>
+	</section>
+  <section>
+    <h2>Formulario Usuario</h2>
+    <p>En este espacio podrás ingresar tu nombre y contraseña para acceder a nuestra plataforma. Queremos asegurarnos de que tengas la mejor experiencia posible, por lo que te pedimos que verifiques bien la información antes de enviar el formulario.
+	Recuerda que todos los datos ingresados serán manejados de forma segura y con confidencialidad. Si tienes algún problema para acceder o necesitas recuperar tu contraseña, no dudes en contactarnos.</p>
+	<p>Gracias por confiar en nosotros. ¡Estamos aquí para ayudarte!</p>
+	  <form action="" method="post">
+		  <label id="">Nombre:</label>
+		  <input type="text" id="nombre" name="nombre">
+		  <label id="">Contraseña:</label>
+		  <input type="password" id="contrasena" name="contrasena">
+		  <input type="submit" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Formulario de Inscripción a la Comunidad</h2>
+    <p>Por favor, completa este formulario con tu información personal. Tus datos nos ayudarán a ofrecerte una experiencia personalizada y mejorar los servicios que brindamos, asegúrate de ingresar la información correcta. </p>
+
+<ul> <li><b>Nombre:</b> Ingresa tu nombre completo.</li>
+<li><b>Edad:</b> Proporciónanos tu edad para adecuar nuestros contenidos y servicios.</li>
+<li><b>Estado:</b> Selecciona el estado donde resides para ofrecerte opciones y recomendaciones más relevantes.</li></ul>
+<p> Si tienes dudas o necesitas asistencia, no dudes en contactarnos. ¡Gracias por formar parte de nuestra comunidad!</p>
+	  
+    <form id="form1" name="form1" method="post">
+<label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="edad">Edad:</label>
+      <input type="number" name="edad" id="edad" min="18" max="99">
+      <label for="estado">Estado:</label>
+      <select name="Estado" id="Estado">
+		  <option value="Aguascalientes">Aguascalientes</option>
+		  <option value="Colima">Colima</option>
+		  <option value="Durango">Durango</option>
+		  <option value="Guerrero">Guerrero</option>
+		  <option value="Puebla">Puebla</option>
+		  <option value="CDMX">CDMX</option>
+	<input type="submit" value="Enviar">
+      </select>
+    </form>
+  </section>
+  <section>
+    <h2>¡Comparte tus gustos musicales con nosotros!</h2>
+    <p>Este formulario nos ayudará a conocerte mejor y descubrir tus preferencias. La música es una forma poderosa de expresión, y nos encantaría saber más sobre los géneros que disfrutas. Por favor, completa la siguiente información:</p>
+	  <ul>
+	  <li><b>Nombre:</b> Ingresa tu nombre completo.</li>
+<li><b>Género:</b> Elige el género con el que te identifiques, queremos ser inclusivos y respetar tu identidad.</li>
+<li><b>Géneros Musicales Favoritos:</b> Marca todas las opciones que reflejen tus preferencias, queremos entender qué tipo de música disfrutas más, ya sea que te guste el Rock por su energía, el Pop por su ritmo pegajoso, el Jazz & Blues por su sofisticación, la música Tropical por su alegría, o el Indie por su frescura, cada género tiene algo único que ofrecer.</li>
+	  </ul>
+	  <p>Al finalizar, asegúrate de hacer clic en el botón Enviar. Tus respuestas nos ayudarán a adaptar nuestras recomendaciones y eventos musicales según tus gustos. Si tienes comentarios adicionales sobre tus preferencias, no dudes en compartirlos con nosotros más adelante.</p>
+	  <p>¡Gracias por tomarte el tiempo de completar este formulario! Esperamos que disfrutes de las opciones musicales que tenemos preparadas para ti.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="textfield">Nombre:</label>
+      <input type="text" name="textfield" id="textfield">
+		<label for="Genero">Género:</label>
+      <table width="40%">
+        <tr>
+			
+            <td><input type="radio" name="Genero" value="fem" id="Genero_0">
+		  <td><label>Femenino</label></td>
+            </td>
+        </tr>
+        <tr>
+         
+            <td><input type="radio" name="Genero" value="fem" id="Genero_1">
+		  <td><label>Maculino</label></td>
+            </td>
+        </tr>
+        <tr>
+            
+            <td><input type="radio" name="Genero" value="fem" id="Genero_2">
+		  <td><label>Otro</label></td>
+            </td>
+        </tr>
+      </table>
+	<label for="musica">¿Cuál es tu género musical favorito?</label>
+	<p>
+	  <input type="checkbox" name="Musica" value="rock " id="Musica_0"><label>Rock</label>
+	  <br>
+		
+	 <input type="checkbox" name="Musica" value="pop" id="Musica_1"><label>Pop</label>
+	  <br> 
+		
+	  <input type="checkbox" name="Musica" value="jazz&blues" id="Musica_2"><label>Jazz & Blues</label>
+	  <br>
+		
+	<input type="checkbox" name="Musica" value="tropical" id="Musica_3"><label>Tropical</label> 
+	  <br> 
+		
+	  <input type="checkbox" name="Musica" value="indie" id="Musica_4"><label>Indie</label>
+	  <br>
+	  </p>
+<input type="submit" value="Enviar">
+    </form>
+	 
+  </section>
+  <section>
+    <h2>Formulario para Envío de Documentación Estudiantil</h2>
+    <p>Por favor, utiliza este formulario para enviarnos los documentos necesarios para tu proceso de inscripción al programa de intercambio estudiantil, recuerda que los archivos deben estar completos y en los formatos permitidos (.pdf, .jpg, .docx).</p>
+	  <p><b>Nota:</b>Si tienes varios documentos, agrúpalos en un archivo comprimido (.zip o .rar). Nos pondremos en contacto contigo si se requiere alguna corrección o si falta algún documento.</p>
+	  <p>¡Gracias por completar esta parte del proceso! Nos entusiasma acompañarte en esta nueva etapa y esperamos recibir tus documentos pronto. Si tienes alguna duda, no dudes en comunicarte con nosotros.</p>
+<p>Selecciona un archivo para enviar:</p>
+<form id="form3" name="form3" method="post">
+  <label for="archivo">Seleccionar archivo:</label>
+  <input type="file" id="archivo" name="archivo"><br><br>
+  <input type="submit" value="Enviar">
+</form>
+  </section>
+
+<section>
+    <h2>Formulario de Registro para Membresía</h2>
+    <p>Por favor, completa este formulario para unirte a nuestra comunidad exclusiva, queremos conocerte mejor y ofrecerte beneficios personalizados según tu perfil.</p>
+	<p><b>Importante:</b>Toda la información proporcionada se utilizará únicamente para fines internos y estará protegida bajo nuestras políticas de privacidad.</p>
+<p> Cuando termines, haz clic en "Enviar" para completar tu registro. ¡Bienvenido a nuestra comunidad!</p>
+<form id="form4" name="form4" method="post">
+  <label for="nacimiento">Fecha de nacimiento (mes y año):</label>
+  <input type="month" id="naciemiento" name="nacimiento" min="1960-01" max="2024-12">
+  <input type="submit" value="Enviar">
+</form>
+  </section>
+
+<section>
+    <h2>Formulario de Agendamiento de Citas</h2>
+    <p>Completa este formulario para reservar una cita con nosotros. Primero, selecciona la fecha disponible y luego elige el horario que más te convenga.</p>
+	<p>Ingresa la fecha que deseas dentro del calendario. Asegúrate de que la hora seleccionada se encuentre dentro de nuestro horario de atención.</p>
+	<p>Una vez recibida tu solicitud, te enviaremos un correo electrónico con la confirmación de la cita, si necesitas modificarla o cancelarla, contáctanos con al menos 24 horas de anticipación.</p>
+
+<p>Gracias por confiar en nosotros. Estamos encantados de atenderte.</p>
+<form id="form5" name="form5" method="post">
+  <label for="fecha">Selecciona una fecha:</label>
+  <input type="date" id="fecha" name="fecha" min="2024-01-01" max="2024-12-31"><br><br>
+  
+  <label for="horario">Hora:</label>
+  <input type="time" id="horario" name="horario" min="7:00" max="20:00" required>
+  <input type="submit" value="Enviar">
+</form>
+  </section>
+<section>
+    <h2>Formulario de Registro de Contacto</h2>
+    <p>Por favor, completa este formulario con tu información personal para que podamos comunicarnos contigo.
+
+Ingresa tu nombre y apellidos de forma completa y asegúrate de que el número telefónico sea correcto, ya que utilizaremos esta información para confirmar cualquier solicitud o contactarte en caso de ser necesario.</p> <p>Una vez que envíes el formulario, nos pondremos en contacto contigo lo antes posible. Si tienes alguna consulta urgente, no dudes en llamarnos directamente.</p>
+<form id="form6" name="form6" method="post">
+	<label for="nombres">Nombre y Apellidos:</label>
+    <input type="text" name="nombres" id="nombres">    
+ <label for="telefono">Número telefónico:</label>
+  <input type="tel" id="telefono" name="telefono" placeholder="+52-000-000-0000">
+  <input type="submit" value="Enviar"> 
+	</form>
+  </section>
+<section>
+    <h2>Formulario de Justificación de Respuesta</h2>
+    <p>Por favor, responde a la siguiente pregunta y justifica tu respuesta en un mínimo de 100 palabras:</p>
+
+<p><b>¿Por qué consideras que la educación en línea es igual de efectiva que la educación presencial?</b></p>
+	<p>Utiliza este espacio para desarrollar tus ideas de manera clara y concisa, explicando los motivos detrás de tu opinión. Recuerda que la justificación debe tener al menos 100 palabras, así que asegúrate de proporcionar suficiente detalle para que tu argumento sea sólido y comprensible.</p>
+	<p>Puedes abordar aspectos como tu experiencia personal, información relevante, datos o hechos que respalden tu respuesta, así como cualquier consideración adicional que creas pertinente. Agradecemos tu participación y el tiempo que dedicas a este proceso.</p>
+<form id="form7" name="form7" method="post">
+ <label for="respuesta"> Jusifica tu respuesta: </label>
+  <textarea name="respuesta" rows="15" cols="45" id="respuesta">Justifica tu respuesta en 100 palabras como mínimo.</textarea>
+ <input type="reset" value="Deshacer">
+	<input type="submit" value="Enviar">
+	</form>
+  </section>
+<section>
+    <h2>Formulario de Selección de Color Favorito</h2>
+    <p>Por favor, completa este formulario seleccionando tu color favorito. Tu elección nos ayudará a personalizar nuestras ofertas y recomendaciones de acuerdo con tus preferencias.</p>
+	<p>Elige el color que más te represente o que simplemente te guste. Esta información es valiosa para nosotros, ya que nos permite adaptar nuestras comunicaciones y productos a los gustos de nuestra comunidad. Agradecemos tu participación y esperamos que disfrutes de una experiencia más personalizada con nosotros.</p>
+	<p>Una vez que hayas realizado tu selección, asegúrate de enviar el formulario para que podamos procesar tu respuesta.</p>
+<form id="form8" name="form8" method="post">
+	<label for="color">Selecciona tu color favorito:</label>
+  <input type="color" id="color" name="color" value="#855e6e" >
+  <input type="submit" value="Enviar">
+	</form>
+ 
+  </section>
+<section>
+    <h2>Formulario de Suscripción a Noticias de Eventos</h2>
+    <p>Imagina que estás interesado en asistir a un emocionante evento de arte y diseño en tu ciudad. Para mantenerte informado sobre nuestras actividades, por favor completa este formulario con tu nombre y correo electrónico.</p>
+	<p>Al ingresar tu nombre completo, podremos dirigirte de manera personalizada en nuestras comunicaciones. Asegúrate de proporcionar una dirección de correo electrónico válida, ya que la utilizaremos para enviarte actualizaciones sobre próximos eventos, talleres y oportunidades exclusivas.</p>
+	<p>u información será manejada con la máxima confidencialidad y solo se utilizará para mantenerte al tanto de nuestros eventos. ¡Esperamos verte pronto y que disfrutes de todas nuestras novedades!</p>
+<form id="form9" name="form9" method="post">
+	<label for="textf">Nombre:</label>
+      <input type="text" name="textf" id="textf">
+	<label for="email">Ingrese su correo electrónico:</label>
+  <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com">
+  <input type="submit" value="Enviar">
+	
+	</form>
+ 
+  </section>
+</main>
+<footer>
+  <h5>Elaborado por María José García Machorro</h5>
+</footer>
+</body>
+</html>
