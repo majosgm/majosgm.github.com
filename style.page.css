@@ -40,6 +40,9 @@ nav li{
                 display: inline-block;
 	border-radius: 10px;
 }
+main nav ul li{
+	width: 19.3%
+}
 nav ul li a{
                 color: #855E6E;
                 text-decoration: none;
