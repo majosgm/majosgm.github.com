@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header,nav,main,footer{
+    /*width: 960px;*/
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #855e6e;
+    font-family: "Open Sans", sans-serif;
+	
+}
+header{
+    height: 80px;
+    background-color:#855E6E;
+    color: #F7F1E1;
+    text-align: center;
+    font-size: 20px;
+}
+nav{
+    background-color:#FFDBD7;
+    text-align: center;
+    height: 100px;
+
+}
+nav li{
+                width: 10%;
+                background-color:#FFB2C1;
+                color:#855E6E;
+                margin-bottom: 10px;
+                padding: 10px;
+                text-align: center;
+                border-width: 3px;
+                border-color:#855E6E;
+                border-style: solid;
+                display: inline-block;
+	border-radius: 10px;
+}
+nav ul li a{
+                color: #855E6E;
+                text-decoration: none;
+ }
+nav ul li:hover{
+               background-color: #855E6E;
+                width: 90px;
+ }
+nav ul li a:hover{
+                color:#F7F1E1;
+    font-weight: bold; 
+}
+main{
+    background-color: #FFB2C1;
+    color: #FFDBD7;
+    padding:80px;
+}
+main nav{
+    width: 600px;
+    color:#F7F1E1;
+    background-color: transparent;
+}
+main nav li{
+    border-color:#855E6E ;
+}
+footer{
+    background-color: #CE7095; 
+    color:#F7F1E1;
+    text-align: center;
+ }
+ section{
+    /*width: 800px;*/
+     width: 80%;
+     height: auto;
+    background-color: #FFDBD7;
+    color:#855E6E;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:50px;
+	 border-radius: 10px;
+}
+p{
+    margin-top: 15px;
+    text-align:justify;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+h2{
+    text-align: left;
+}
+img{
+    width:400px;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#taro{
+    width:300px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#yo{
+	    width:1px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#hiro{
+    width:300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#icono{
+    width: 32px;
+    height: auto;
+}
+#fondo_section{
+    background-image: url("../Medios/imagenes/Spook.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+	filter: brightness(40%)
+}
+#t2, #t3, #t4, #texto, #sección_4{
+	color: white;
+	filter: brightness(700%)
+}
+
+#fondo_section p; #fondo_section h2{
+    color:#855e6e;
+}
+#filtros_imagen{
+    text-align: center;
+}
+#filtros_imagen img{
+  display: inline-block;
+    width: 30%;
+    height: auto;
+    padding:10px;
+}
+#img1{
+ filter: brightness(200%);
+}
+#img2{
+filter: contrast(50%) ;
+}
+#img3{
+filter: grayscale(100%);  
+}
+#img4{
+ filter: invert(100%);   
+}
+#img5{
+   filter: opacity(0.5); 
+}
+#img6{
+  filter: sepia(100%);  
+}
+#img7{
+  filter: saturate(150%);  
+}
+#img8{
+  filter: blur(2px);  
+}
+#img9{
+   filter: drop-shadow(10px 10px 20px magenta); 
+}
+#img10{
+    filter: brightness(200%) blur(2px);    
+}
+#img11{
+    filter: hue-rotate(120deg);
+}
+iframe, audio {
+    margin: 0 auto;
+    display: block;
+    padding-top: 10px;
+}
+
